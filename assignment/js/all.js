@@ -263,11 +263,6 @@ function changeVideo(videoUrl) {
 }
 
 
-document.addEventListener('DOMContentLoaded', function () {
-    // 页面加载完成后默认显示可口可乐的历史信息
-    changeHistory('History of Cola');
-});
-
 function changeHistory(videoType) {
     console.log("Loading history for:", videoType);  // 调试输出
     fetch('//users.sussex.ac.uk/~yz644/3dapp/assignment/js/text.json')
@@ -275,6 +270,7 @@ function changeHistory(videoType) {
         .then(data => {
             const historyData = data.pageTextData.find(item => item.title === videoType);
             if (historyData) {
+                console.log('History data found:', historyData);  // 调试输出
                 document.getElementById('historytitle').innerText = historyData.title;
                 document.getElementById('historysubtitle').innerText = historyData.subTitle;
                 document.getElementById('historytext').innerText = historyData.description;
@@ -285,3 +281,7 @@ function changeHistory(videoType) {
         .catch(error => console.error('Error loading the history data:', error));
 }
 
+// 页面加载完成后默认显示可口可乐的历史信息
+document.addEventListener('DOMContentLoaded', function () {
+    changeHistory('History of Cola');
+});
