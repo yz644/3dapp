@@ -71,65 +71,6 @@
     </nav>
     
 
-    <div class="icons">
-        <div id="menu-btn" class="fas fa-bars"></div>
-        <div id="search-btn" class="fas fa-search"></div>
-        <div id="cart-btn" class="fas fa-shopping-cart"></div>
-        <div id="login-btn" class="fas fa-user"></div>
-    </div>
-
-    <form action="" class="search-form">
-        <input type="search" placeholder="search here..." id="search-box">
-        <label for="search-box" class="fas fa-search"></label>
-    </form>
-
-    <div class="shopping-cart">
-        <div class="box">
-            <i class="fas fa-times" aria-hidden="true"></i>
-            <img src="//users.sussex.ac.uk/~yz644/3dapp/assignment/image/coke.png" alt="">
-            <div class="content">
-                <h3>Coke</h3>
-                <span class="quantity">1</span>
-                <span class="multiply">x</span>
-                <span class="price">$1.99</span>
-            </div>
-        </div>
-        <div class="box">
-            <i class="fas fa-times" aria-hidden="true"></i>
-            <img src="//users.sussex.ac.uk/~yz644/3dapp/assignment/image/sprite_home.png" alt="">
-            <div class="content">
-                <h3>Sprite</h3>
-                <span class="quantity">2</span>
-                <span class="multiply">x</span>
-                <span class="price">$1.99</span>
-            </div>
-        </div>
-        <div class="box">
-            <i class="fas fa-times" aria-hidden="true"></i>
-            <img src="//users.sussex.ac.uk/~yz644/3dapp/assignment/image/pepper_home.png" alt="">
-            <div class="content">
-                <h3>Dr.Pepper</h3>
-                <span class="quantity">4</span>
-                <span class="multiply">x</span>
-                <span class="price">$4.5</span>
-            </div>
-        </div>
-        <h3 class="total"> total : <span>$23.97</span> </h3>
-        <a href="#" class="btn">checkout cart</a>
-    </div>
-
-    <form action="" class="login-form">
-        <h3>login form</h3>
-        <input type="email" placeholder="enter your email" class="box">
-        <input type="password" placeholder="enter your password" class="box">
-        <div class="remember">
-            <input type="checkbox" name="" id="remember-me">
-            <label for="remember-me">remember me</label>
-        </div>
-        <input type="submit" value="login now" class="btn">
-        <p>forget password? <a href="#">click here</a></p>
-        <p>don't have an account? <a href="#">create one</a></p>
-    </form>
 
 </header>
 
@@ -420,26 +361,12 @@
 <div id="MuseumPage" class="page" style="display:none;">
     <!-- Museum 页面内容 -->
     <section class="category">
-
         <div class="box-container">
-    
             <a href="#" class="box">
-                <img src="//users.sussex.ac.uk/~yz644/3dapp/assignment/image/cat-1.png" alt="">
-                <h3>Sprite</h3>
-            </a>
-    
-            <a href="#" class="box">
-                <img src="//users.sussex.ac.uk/~yz644/3dapp/assignment/image/cat-3.png" alt="">
+                <img src="//users.sussex.ac.uk/~yz644/3dapp/assignment/image/main_3D.jpg" alt="">
                 <h3>Coca Cola</h3>
             </a>
-    
-            <a href="#" class="box">
-                <img src="//users.sussex.ac.uk/~yz644/3dapp/assignment/image/cat-4.png" alt="">
-                <h3>Dr.Pepper</h3>
-            </a>
-    
         </div>
-    
     </section>
     <div class="video-container">
         <video id="mainVideo" controls>
@@ -447,144 +374,152 @@
     </video>
 </div>
 <div class="video-controls">
-    <button onclick="changeVideo('https://users.sussex.ac.uk/~yz644/3dapp/assignment/assets/videos/coke_animation.mp4')">Coke Video</button>
-    <button onclick="changeVideo('https://users.sussex.ac.uk/~yz644/3dapp/assignment/assets/videos/sprite_animation.mp4')">Sprite Video</button>
-    <button onclick="changeVideo('https://users.sussex.ac.uk/~yz644/3dapp/assignment/assets/videos/pepper_animation.mp4')">Pepper Video</button>
+<button onclick="changeVideo('https://users.sussex.ac.uk/~yz644/3dapp/assignment/assets/videos/coke_animation.mp4'); changeHistory('Coca Cola');">Coke Video</button>
+<button onclick="changeVideo('https://users.sussex.ac.uk/~yz644/3dapp/assignment/assets/videos/sprite_animation.mp4'); changeHistory('Sprite');">Sprite Video</button>
+<button onclick="changeVideo('https://users.sussex.ac.uk/~yz644/3dapp/assignment/assets/videos/pepper_animation.mp4'); changeHistory('Dr pepper');">Pepper Video</button>
+
 </div>
+
+
+<section class="history">
+<h3 id="historytitle"></h3>
+<h2 id="historysubtitle"></h2>
+<p id="historytext"></p>
+</section>
 <section class="products">
     
     <h1 class="title"> our <span>products</span>  </h1>
 
     <div class="box-container">
 
-        <div class="box">
-            <div class="icons">
-                <a href="#" class="fas fa-shopping-cart" aria-hidden="true"></a>
-                <a href="#" class="fas fa-heart" aria-hidden="true"></a>
-                <a href="#" class="fas fa-eye" aria-hidden="true"></a>
-            </div>
-            <div class="image">
-                <img src="//users.sussex.ac.uk/~yz644/3dapp/assignment/image/coke_render1.png" alt="">
-            </div>
-            <div class="content">
-                <h3>Coca Cola</h3>
-                
-                
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="icons">
-                <a href="#" class="fas fa-shopping-cart" aria-hidden="true"></a>
-                <a href="#" class="fas fa-heart" aria-hidden="true"></a>
-                <a href="#" class="fas fa-eye" aria-hidden="true"></a>
-            </div>
-            <div class="image">
-                <img src="//users.sussex.ac.uk/~yz644/3dapp/assignment/image/coke_render2.png" alt="">
-            </div>
-            <div class="content">
-                <h3>CoCa Cola</h3>
-                
-                
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="icons">
-                <a href="#" class="fas fa-shopping-cart" aria-hidden="true"></a>
-                <a href="#" class="fas fa-heart" aria-hidden="true"></a>
-                <a href="#" class="fas fa-eye" aria-hidden="true"></a>
-            </div>
-            <div class="image">
-                <img src="//users.sussex.ac.uk/~yz644/3dapp/assignment/image/sprite_render1.png" alt="">
-            </div>
-            <div class="content">
-                <h3>Sprite</h3>
-                
-                
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="icons">
-                <a href="#" class="fas fa-shopping-cart" aria-hidden="true"></a>
-                <a href="#" class="fas fa-heart" aria-hidden="true"></a>
-                <a href="#" class="fas fa-eye" aria-hidden="true"></a>
-            </div>
-            <div class="image">
-                <img src="//users.sussex.ac.uk/~yz644/3dapp/assignment/image/sprite_render2.png" alt="">
-            </div>
-            <div class="content">
-                <h3>Sprite</h3>
-                
-                
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="icons">
-                <a href="#" class="fas fa-shopping-cart" aria-hidden="true"></a>
-                <a href="#" class="fas fa-heart" aria-hidden="true"></a>
-                <a href="#" class="fas fa-eye" aria-hidden="true"></a>
-            </div>
-            <div class="image">
-                <img src="//users.sussex.ac.uk/~yz644/3dapp/assignment/image/pepper_render1.png" alt="">
-            </div>
-            <div class="content">
-                <h3>Dr.Pepper</h3>
-                
-                
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="icons">
-                <a href="#" class="fas fa-shopping-cart" aria-hidden="true"></a>
-                <a href="#" class="fas fa-heart" aria-hidden="true"></a>
-                <a href="#" class="fas fa-eye" aria-hidden="true"></a>
-            </div>
-            <div class="image">
-                <img src="//users.sussex.ac.uk/~yz644/3dapp/assignment/image/pepper_render2.png" alt="">
-            </div>
-            <div class="content">
-                <h3>Dr.Pepper</h3>
-                
-                
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="icons">
-                <a href="#" class="fas fa-shopping-cart" aria-hidden="true"></a>
-                <a href="#" class="fas fa-heart" aria-hidden="true"></a>
-                <a href="#" class="fas fa-eye" aria-hidden="true"></a>
-            </div>
-            <div class="image">
-                <img src="//users.sussex.ac.uk/~yz644/3dapp/assignment/image/coke_top_tn.png" alt="">
-            </div>
-            <div class="content">
-                <h3>Coke lid</h3>
-                
-                
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="icons">
-                <a href="#" class="fas fa-shopping-cart" aria-hidden="true"></a>
-                <a href="#" class="fas fa-heart" aria-hidden="true"></a>
-                <a href="#" class="fas fa-eye" aria-hidden="true"></a>
-            </div>
-            <div class="image">
-                <img src="//users.sussex.ac.uk/~yz644/3dapp/assignment/image/sprite_top_tn.png" alt="">
-            </div>
-            <div class="content">
-                <h3>Sprite lid</h3>
-                
-                
-            </div>
-        </div>
+<div class="box">
+    <div class="icons">
+        
+        <a href="#" class="fas fa-heart" aria-hidden="true"></a>
+        
     </div>
+    <div class="image">
+        <img src="//users.sussex.ac.uk/~yz644/3dapp/assignment/image/coke_render1.png" alt="">
+    </div>
+    <div class="content">
+        <h3>Coca Cola</h3>
+        
+        
+    </div>
+</div>
+
+<div class="box">
+    <div class="icons">
+        
+        <a href="#" class="fas fa-heart" aria-hidden="true"></a>
+        
+    </div>
+    <div class="image">
+        <img src="//users.sussex.ac.uk/~yz644/3dapp/assignment/image/coke_render2.png" alt="">
+    </div>
+    <div class="content">
+        <h3>CoCa Cola</h3>
+        
+        
+    </div>
+</div>
+
+<div class="box">
+    <div class="icons">
+        
+        <a href="#" class="fas fa-heart" aria-hidden="true"></a>
+        
+    </div>
+    <div class="image">
+        <img src="//users.sussex.ac.uk/~yz644/3dapp/assignment/image/sprite_render1.png" alt="">
+    </div>
+    <div class="content">
+        <h3>Sprite</h3>
+        
+        
+    </div>
+</div>
+
+<div class="box">
+    <div class="icons">
+        
+        <a href="#" class="fas fa-heart" aria-hidden="true"></a>
+        
+    </div>
+    <div class="image">
+        <img src="//users.sussex.ac.uk/~yz644/3dapp/assignment/image/sprite_render2.png" alt="">
+    </div>
+    <div class="content">
+        <h3>Sprite</h3>
+        
+        
+    </div>
+</div>
+
+<div class="box">
+    <div class="icons">
+        
+        <a href="#" class="fas fa-heart" aria-hidden="true"></a>
+        
+    </div>
+    <div class="image">
+        <img src="//users.sussex.ac.uk/~yz644/3dapp/assignment/image/pepper_render1.png" alt="">
+    </div>
+    <div class="content">
+        <h3>Dr.Pepper</h3>
+        
+        
+    </div>
+</div>
+
+<div class="box">
+    
+    <div class="icons">
+        
+        <a href="#" class="fas fa-heart" aria-hidden="true"></a>
+        
+    </div><div class="image">
+        <img src="//users.sussex.ac.uk/~yz644/3dapp/assignment/image/pepper_render2.png" alt="">
+    </div>
+    
+<div class="content">
+        <h3>Dr.Pepper</h3>
+        
+        
+    </div></div>
+
+<div class="box">
+    <div class="icons">
+        
+        <a href="#" class="fas fa-heart" aria-hidden="true"></a>
+        
+    </div>
+    <div class="image">
+        <img src="//users.sussex.ac.uk/~yz644/3dapp/assignment/image/coke_top_tn.png" alt="">
+    </div>
+    <div class="content">
+        <h3>Coke lid</h3>
+        
+        
+    </div>
+</div>
+
+<div class="box">
+    <div class="icons">
+        
+        <a href="#" class="fas fa-heart" aria-hidden="true"></a>
+        
+    </div>
+    <div class="image">
+        <img src="//users.sussex.ac.uk/~yz644/3dapp/assignment/image/sprite_top_tn.png" alt="">
+    </div>
+    <div class="content">
+        <h3>Sprite lid</h3>
+        
+        
+    </div>
+</div>
+</div>
 </section>
 </div>
 
